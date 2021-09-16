@@ -1,0 +1,32 @@
+def f():
+    # assign variables 
+    ab = A and B
+    abc = ab and C
+    abcd = abc and D
+
+    if abcd:
+         do_z_and_y_and_x()
+         w()
+         return True 
+    elif abc:
+        do_z_and_y_and_x()
+        v()
+    elif ab:
+        do_z_and_y()
+        u()
+    elif A:
+        z()
+        t()
+    else:
+        s()
+    return False 
+
+# helper function to execute z and y
+def do_z_and_y(): 
+    z()
+    y()
+
+# helper function to execute z and y and x
+def do_z_and_y_and_x():
+    do_z_and_y()
+    x()
